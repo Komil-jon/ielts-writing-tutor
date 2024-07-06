@@ -2,7 +2,7 @@
 ##########################################################
 
 # Description
-Using flask framework, Llama AI fro G4F library and MongoDB for remote database and telegram open API to automate the process of evaluation of writing tasks in IELTS.
+Using flask framework, Llama AI from G4F library and MongoDB for remote database and telegram open API to automate the process of evaluation of writing tasks in IELTS.
 
 # Deployment
 1. ## Clone/Fork this repository
@@ -10,7 +10,7 @@ Using flask framework, Llama AI fro G4F library and MongoDB for remote database 
    - Create database 'writing-check' and collection 'users'
 3. ## Environmental variables
    - ADMIN - your telegram ID
-   - BOT_TOKEN - your telegram bot's ID
+   - BOT_TOKEN - your telegram bot's API token
    - GROUP - telegram group ID for sending data (not functional!)
    - PASSWORD - MongoDB password
    - USERNAME - MongoDB username
