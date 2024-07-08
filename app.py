@@ -107,14 +107,14 @@ def initial(user_id, query, mode, topic):
     return
 
 def database_search(id):
-    connection_string = f"mongodb+srv://{USERNAME}:" + PASSWORD + "@cluster0.a0mvghx.mongodb.net/?retryWrites=true&w=majority"
+    connection_string = f"mongodb+srv://{USERNAME}:{PASSWORD}@core.pur20xh.mongodb.net/?appName=Core"
     client = MongoClient(connection_string)
     db = client['writing_check']
     collection = db['users']
     return collection.find_one({"id": id})
 
 def database_insert(record):
-    connection_string = f"mongodb+srv://{USERNAME}:" + PASSWORD + "@cluster0.a0mvghx.mongodb.net/?retryWrites=true&w=majority"
+    connection_string = f"mongodb+srv://{USERNAME}:{PASSWORD}@core.pur20xh.mongodb.net/?appName=Core"
     client = MongoClient(connection_string)
     db = client['writing_check']
     collection = db['users']
